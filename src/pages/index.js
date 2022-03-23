@@ -6,9 +6,7 @@ import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 import ArrowScroll from '@/components/ArrowScroll';
 
-const MainScene = dynamic(() => import('@/components/MainScene'), {
-  ssr: false,
-});
+import SpeechDemo from '@/components/SpeechDemo';
 
 import CommonLayout from '@/layouts/CommonLayout';
 
@@ -25,7 +23,7 @@ export default function Home() {
   return (
     <CommonLayout>
       <div className="min-h-[100vh] relative flex flex-none h-full">
-        <MainScene />
+        <SpeechDemo />
       </div>
       <ArrowScroll />
     </CommonLayout>

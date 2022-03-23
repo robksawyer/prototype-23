@@ -10,6 +10,20 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
     extend: {
+      animation: {
+        talk: 'talk 0.76s ease-out infinite',
+        'talk-slow': 'talk 1s ease-out infinite',
+      },
+      keyframes: {
+        talk: {
+          '0%, 100%': { transform: 'scaleY(100%)' },
+          '17%': { transform: 'scaleY(20%)' },
+          '26%': { transform: 'scaleY(58%)' },
+          '54%': { transform: 'scaleY(94%)' },
+          '64%': { transform: 'scaleY(34%)' },
+          '73%': { transform: 'scaleY(83%)' },
+        },
+      },
       colors: {
         primary: '#000000',
         secondary: '#ffffff',
