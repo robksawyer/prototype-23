@@ -1,5 +1,6 @@
 /**
  * @file SpeechDemo.js
+ * @see https://mikeyparton.github.io/react-speech-kit/
  */
 import * as React from 'react';
 import PropTypes from 'prop-types';
